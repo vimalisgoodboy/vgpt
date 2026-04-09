@@ -18,7 +18,7 @@ source venv/bin/activate
 # ---------- INSTALL PYTHON LIBS ----------
 pip install --upgrade pip
 
-pip install flask flask-socketio requests rich prompt_toolkit
+pip install flask flask-socketio requests rich prompt_toolkit reportlab scikit-learn plotly openvas_lib
 
 # ---------- INSTALL OLLAMA ----------
 echo "🔥 Installing Ollama..."
@@ -37,6 +37,5 @@ ollama pull llama3
 echo ""
 echo "✅ INSTALLATION COMPLETE"
 echo ""
-echo "Run:"
-echo "source venv/bin/activate"
-echo "python main.py"
+echo "Starting VGPT..."
+python vgptv2.py
